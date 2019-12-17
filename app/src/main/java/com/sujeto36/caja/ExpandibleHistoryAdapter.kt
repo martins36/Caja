@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import android.widget.TextView
+import com.sujeto36.caja.model.main.HistoryChildModel
+import com.sujeto36.caja.model.main.HistoryModel
 
 internal class ExpandableHistoryAdapter(
     private val context: Context,

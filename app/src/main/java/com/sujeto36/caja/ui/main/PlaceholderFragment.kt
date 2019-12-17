@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ExpandableListView
 import androidx.fragment.app.Fragment
 import com.sujeto36.caja.ExpandableListAdapter
-import com.sujeto36.caja.HeaderModel
+import com.sujeto36.caja.model.main.HeaderModel
 import com.sujeto36.caja.R
 import com.sujeto36.caja.db.main.IngEgDBHelper
 import com.sujeto36.caja.db.main.IngEgModel

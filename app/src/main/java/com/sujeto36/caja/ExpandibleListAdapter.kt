@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import android.widget.TextView
 import com.sujeto36.caja.db.main.IngEgModel
+import com.sujeto36.caja.model.main.HeaderModel
 
 internal class ExpandableListAdapter(
     private val type: String,

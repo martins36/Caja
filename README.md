@@ -4,5 +4,6 @@ Caja es una aplicacion que permite ingresar un salario y agregar ingresos y egre
 ## Requisitos
 * Android 5.0 Lollipop
 
-### Novedades de la v1.0.1
-* Se movio el FAB al centro de la pantalla para evitar que tape el precio de los I/E que se encontraban al final de la lista
+### Novedades de la v1.0.2
+* Arreglos esteticos
+* Ahora el saldo sobrante se suma automaticamente al agregar un nuevo sueldo

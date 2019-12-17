@@ -1,4 +1,6 @@
-package com.sujeto36.caja
+package com.sujeto36.caja.model.main
+
+import com.sujeto36.caja.Util
 
 class HeaderModel (
     var date: String,
@@ -7,7 +9,8 @@ class HeaderModel (
     constructor(date: String) : this (date, 0)
 
     fun priceFormat() : String {
-        return "$ $price"
+        val util = Util()
+        return util.priceFormat(price)
     }
 
     fun dateShort() : String {

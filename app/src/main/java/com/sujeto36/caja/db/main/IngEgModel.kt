@@ -12,6 +12,14 @@ class IngEgModel (
             this(date, desc, price, "", -1, 1)
 
     fun priceFormat() : String {
-        return "$ $price"
+        var str = ""
+        val num = price.toString()
+        for (i in 0.until(num.length)) {
+            str += num[num.length - (i + 1)]
+            if ((i + 1)%3 == 0 && i != num.length - 1) {
+                str += "."
+            }
+        }
+        return "$ ${str.reversed()}"
     }
 }

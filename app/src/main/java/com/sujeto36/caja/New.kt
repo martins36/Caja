@@ -62,9 +62,13 @@ class New : AppCompatActivity() {
                 if (type != "S" && ingEgDBHelper.countSueldo() != 0) { //caso normal
                     ingEgDBHelper.insert(ingEg)
                 }
-                else if (type == "S") { //caso sueldo/primer sueldo (indiferente)
+                else if (type == "S") { //caso sueldo/primer sueldo
+                    val saldo = ingEgDBHelper.sumTotal() //si es el primer sueldo, saldo = 0
                     ingEgDBHelper.clear()
                     ingEgDBHelper.insert(ingEg)
+
+                    if (saldo > 0) //sueldo (suma el saldo sobrante)
+                        ingEgDBHelper.insert(IngEgModel(currentDate, "Saldo", saldo, "I", -1, 1))
                 }
                 else { //caso I/E primero
                     Toast.makeText(this, "Error: Debe ingresar un sueldo primero", Toast.LENGTH_SHORT).show()

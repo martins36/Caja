@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteConstraintException
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import android.util.Log
-import com.sujeto36.caja.HistoryChildModel
-import com.sujeto36.caja.HistoryModel
+import com.sujeto36.caja.model.main.HistoryChildModel
+import com.sujeto36.caja.model.main.HistoryModel
 
 class IngEgDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
 
@@ -117,7 +117,11 @@ class IngEgDBHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         }
 
         cursor.close()
-        return HistoryModel(readSueldoHistory(num).date, historyChild, sumTotalHistory(num))
+        return HistoryModel(
+            readSueldoHistory(num).date,
+            historyChild,
+            sumTotalHistory(num)
+        )
     }
 
     @Throws(SQLiteConstraintException::class)

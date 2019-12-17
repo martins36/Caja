@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ExpandableListView
 import com.sujeto36.caja.db.main.IngEgDBHelper
+import com.sujeto36.caja.model.main.HistoryChildModel
+import com.sujeto36.caja.model.main.HistoryModel
 import kotlinx.android.synthetic.main.activity_history.*
 import java.util.ArrayList
 import java.util.HashMap

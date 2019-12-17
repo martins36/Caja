@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var ingEgDBHelper : IngEgDBHelper
+    private val util = Util()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         val fab: FloatingActionButton = findViewById(R.id.fab)
 
         ingEgDBHelper = IngEgDBHelper(this)
-        val price = "$ ${ingEgDBHelper.sumTotal()}"
+        val price = util.priceFormat(ingEgDBHelper.sumTotal())
         text_total.text = price
 
         fab.setOnClickListener {
