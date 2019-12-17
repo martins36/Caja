@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Caja</string>
+    <string name="tab_text_1">Egresos</string>
+    <string name="tab_text_2">Ingresos</string>
+    <string name="activity_new">Nuevo</string>
+    <string name="text_total">Subotal</string>
+    <string name="text_history">Historial</string>
+
+    <string name="eg">Egreso</string>
+    <string name="ing">Ingreso</string>
+    <string name="sueldo">Sueldo</string>
+    <string name="desc">Descripción</string>
+    <string name="price">Precio</string>
+    <string name="save">Guardar</string>
+</resources>
